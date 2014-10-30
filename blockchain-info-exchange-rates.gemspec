@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.authors = ["Simon Males"]
   s.date = "2014-10-30"
-  s.description = "TODO: longer description of your gem"
+  s.description = "Money Blockchain.info Exchange Rates"
   s.email = "sime@sime.net.au"
   s.extra_rdoc_files = [
     "LICENSE.txt",
