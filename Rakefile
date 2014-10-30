@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "blockchain-info-exchange-rates"
   gem.homepage = "http://github.com/sime/blockchain-info-exchange-rates"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = "Money Blockchain.info Exchange Rates"
+  gem.description = "This is a direct rip/port of Money Open Exchange Rates experimental and not used in production."
   gem.email = "sime@sime.net.au"
   gem.authors = ["Simon Males"]
   # dependencies defined in Gemfile
