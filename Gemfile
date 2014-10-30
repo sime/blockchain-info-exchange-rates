@@ -1,8 +1,9 @@
 source "http://rubygems.org"
 
-gem "money", "~> 6.2.1"
-gem "monetize", "~> 0.4.1"
+gem "money", "~> 6.1.1"
+gem "monetize", "~> 0.3.0"
 gem "json", ">= 1.7"
+gem "i18n", "~> 0.6.4"
 
 group :development do
   gem "shoulda", ">= 0"
