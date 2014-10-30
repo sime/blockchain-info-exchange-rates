@@ -1,34 +1,9 @@
-require 'simplecov'
+require 'minitest/autorun'
+require 'rr'
+require 'money/bank/blockchain_info_exchange_rates'
+require 'monetize'
+require 'timecop'
+require 'pry'
+require 'fakeweb'
 
-module SimpleCov::Configuration
-  def clean_filters
-    @filters = []
-  end
-end
-
-SimpleCov.configure do
-  clean_filters
-  load_adapter 'test_frameworks'
-end
-
-ENV["COVERAGE"] && SimpleCov.start do
-  add_filter "/.rvm/"
-end
-require 'rubygems'
-require 'bundler'
-begin
-  Bundler.setup(:default, :development)
-rescue Bundler::BundlerError => e
-  $stderr.puts e.message
-  $stderr.puts "Run `bundle install` to install missing gems"
-  exit e.status_code
-end
-require 'test/unit'
-require 'shoulda'
-
-$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
-$LOAD_PATH.unshift(File.dirname(__FILE__))
-require 'blockchain-info-exchange-rates'
-
-class Test::Unit::TestCase
-end
+FakeWeb.allow_net_connect = false
