@@ -3,7 +3,7 @@ source "http://rubygems.org"
 gem "money", "~> 6.4.0"
 gem "monetize", "~> 1.0.0"
 gem "json", ">= 1.7"
-gem "i18n", "~> 0.6.4"
+gem "i18n", ">= 0.6.4"
 
 group :development do
   gem "shoulda", ">= 0"
