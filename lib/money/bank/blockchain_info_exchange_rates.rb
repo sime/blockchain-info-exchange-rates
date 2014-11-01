@@ -36,6 +36,11 @@ class Money
         raise InvalidCache
       end
 
+      def get_rate(from_currency, to_currency, opts = {})
+        expire_rates
+        super
+      end
+
       def expire_rates
         if ttl_in_seconds && rates_expiration <= Time.now
           update_rates

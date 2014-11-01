@@ -220,7 +220,6 @@ describe Money::Bank::BlockchainInfoExchangeRates do
       end
 
       it 'should update the rates' do
-        subject.update_rates
         subject.get_rate('BTC', 'EUR').wont_equal @btc_eur_rate
       end
 
