@@ -97,26 +97,4 @@ class Money
     end
   end
 end
-if false
-  bie = Money::Bank::BlockchainInfoExchangeRates.new
-  bie.cache = '/tmp/bogus.cache.json'
-  bie.update_rates
 
-  #money = Money.new(0, "USD")
-
-  btc = {
-    :priority => 1,
-    :iso_code => "BTC",
-    :name => "Bitcoin",
-    :symbol => "BTC",
-    :subunit => "Cent",
-    :subunit_to_unit => 1000,
-    :separator => ".",
-    :delimiter => ","
-  }
-  Money::Currency.register(btc)
-  rate = 13.7603
-  bie.add_rate("USD", "BTC", 1 / 13.7603)
-  bie.add_rate("BTC", "USD", rate)
-  bie.exchange_with(100.to_money("BTC"), 'USD').cents.must_equal 137603
-end
