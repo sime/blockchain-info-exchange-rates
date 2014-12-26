@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-gem "monetize", "~> 1.0.0"
+gem "monetize", "~> 1.1.0"
 gem "json", ">= 1.7"
 
 group :development do
