@@ -66,8 +66,7 @@ GEM
     racc (1.5.2)
     rack (2.2.3)
     rake (12.3.3)
-    rdoc (3.12.2)
-      json (~> 1.4)
+    rdoc (6.3.1)
     rr (1.1.2)
     shoulda (3.5.0)
       shoulda-context (~> 1.0, >= 1.0.1)
@@ -99,7 +98,7 @@ DEPENDENCIES
   monetize (~> 1.1.0)
   pry
   rake
-  rdoc (~> 3.12)
+  rdoc (~> 6.3)
   rr (>= 1.0.4)
   shoulda
   simplecov
